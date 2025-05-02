@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Milagros Galli</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/hydra-synth/dist/hydra-synth.js"></script>
+
+    <style>
+        .play-link {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <div class="presentacion">
+                        <h2>Milagros Galli</h2>
+                        <h4>Visual Artist</h4>
+</div>
+            <nav>
+                <a href="#" onclick="mostrarSeccion('creative-coding')">Creative Coding</a>
+                <a href="#" onclick="mostrarSeccion('analog')">Analog</a>
+              <!--  <a href="#foot">Comissions</a> -->
+                <a href="#" onclick="mostrarSeccion('contact')">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+ <section id="creative-coding"  class="seccion" >
+
+
+
+
+    <div id="hydras">
+        <div class="container">
+
+            <div class="hydra-container">
+            <canvas id="myCanvas" width=400px heigth=400px></canvas>
+            <canvas id="plantCanvas" width=400px heigth=400px></canvas>
+               <script src="scripts/zorritoScript.js" > </script> 
+                 <script src="scripts/plantaScript.js" > </script>
+
+               </div>
+                </div> 
+
+                   
+
+                 </div>
+
+     <div id="videoPauli">
+    <div class="container">
+    <video 
+      src="assets/videoCorto.mp4" controls  autoplay  ></video>
+
+    <div class="texto"> 
+      <p>
+       Video comission for musical show stage. Inspired in nature and musical instruments. 
+       Created with Processing 4.3 , Hydra VideoSynth and Photoshop for image composition.
+       Original video lasts 30 minutes to be reproduced at background.
+      </p>
+    </div>
+    </div>
+    </div>
+
+    <div class="video-portfolio">
+     <div class="fila fila-dos">
+    <video src="assets/port1.mp4" autoplay loop muted playsinline></video>
+    <video src="assets/port2.mp4" autoplay loop muted playsinline></video>
+     </div>
+  
+     <div class="fila fila-tres">
+    <video src="assets/port3.mp4" autoplay loop muted playsinline></video>
+    <video src="assets/port4.mp4" autoplay loop muted playsinline></video>
+    <video src="assets/port5.mp4" autoplay loop muted playsinline></video>
+     </div>
+
+     <div class="texto-link">
+      <p>
+      Processing 4.3 sketches. Access code <a href="https://github.com/GalliMi/processingSketches">here </a>
+      </p>
+       </div>
+    </div>
+
+        
+
+    
+  </section>
+
+<section id="analog"  class="seccion">
+
+     <div class="galeria-texto">
+
+ <p>
+    Techniques : Traditional painting, drawing, woodcarving, silk-screen printing, etching, paste-up, cyanotype .
+      </p>
+           </div>
+
+  
+     <div class="galeria">
+   
+  <img src="assets/analog/analog1.jpg">
+<img src="assets/analog/analog3.jpg">
+<img src="assets/analog/analog4.jpg">
+<img src="assets/analog/analog5.jpg">
+<img src="assets/analog/analog6.jpg">
+<img src="assets/analog/analog7.jpg">
+<img src="assets/analog/analog8.jpg">
+<img src="assets/analog/analog9.jpg">
+<img src="assets/analog/analog10.jpg">
+<img src="assets/analog/analog2.jpg">
+<img src="assets/analog/analog11.jpeg">
+<img src="assets/analog/analog12.jpeg">
+<img src="assets/analog/analog13.jpeg">
+<img src="assets/analog/analog14.jpeg">
+<img src="assets/analog/analog15.jpeg">
+<img src="assets/analog/analog16.jpeg">
+<img src="assets/analog/analog17.jpeg">
+<img src="assets/analog/analog18.jpeg">
+<img src="assets/analog/analog19.jpeg">
+<img src="assets/analog/analog20.jpeg">
+<img src="assets/analog/analog21.jpg">
+<img src="assets/analog/analog21.png">
+
+  </div>
+</section>
+
+
+<section id="contact"  class="seccion">
+
+     <div class="galeria-texto">
+
+ <p>
+   Email: gallimilagros@gmail.com
+  - Based in Buenos Aires, Argentina
+      </p>
+           </div>
+   
+</section>
+
+
+
+
+ <script>
+  function mostrarSeccion(seccionId) {
+  let secciones = document.querySelectorAll('.seccion');
+  secciones.forEach(seccion => {
+    seccion.style.display = 'none';
+  });
+  document.getElementById(seccionId).style.display = 'block';
+}
+   </script>
+   
+   </body>
+</html>
