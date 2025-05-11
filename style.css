@@ -33,6 +33,11 @@ body {
        color:  #aed4c0;
    }
 
+   #comisiones {
+       display: none;
+       color:  #aed4c0;
+   }
+
    
    #contact {
        display: none;
