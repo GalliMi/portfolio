@@ -34,7 +34,7 @@ body {
    }
 
    #comisiones {
-       display: none;
+       display: block;
        color:  #aed4c0;
    }
 
@@ -46,7 +46,7 @@ body {
 
 
      #creative-coding {
-       display: block;
+       display: none;
        color:  #aed4c0;
    }
 
